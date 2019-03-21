@@ -27,6 +27,7 @@ class TargetActivity : AppCompatActivity() {
         getWindow().setBackgroundDrawable(android.graphics.drawable.ColorDrawable(Color.BLUE))
         android.util.Log.e("ABCD", "created")
         setContentView(R.layout.activity_target)
+        findViewById<ViewGroup>(R.id.layout).setBackgroundColor(Color.BLUE)
         val surfaceView = DrawingSurfaceView(this).apply {
             layoutParams = ViewGroup.MarginLayoutParams(500, 300).apply { bottomMargin = 100 }
         }
